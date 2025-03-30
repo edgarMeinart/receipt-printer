@@ -12,9 +12,9 @@ This simple yet surprisingly essential application is your best friend in a worl
 #### Docker way:
 
     bin/docker-print examples/input1.txt
-    # or
+    # OR
     bin/docker-print examples/input2.txt
-    # or
+    # OR
     bin/docker-print examples/input3.txt
 
 #### Local (ruby):
@@ -22,9 +22,13 @@ This simple yet surprisingly essential application is your best friend in a worl
 1. Load dependencies: `bundle install`
 
 2. Run the app:
-    `bin/print.rb examples/input1.txt` OR
-    `bin/print.rb examples/input2.txt` OR
-    `bin/print.rb examples/input3.txt`
+```bash
+bin/print.rb examples/input1.txt
+# OR
+bin/print.rb examples/input2.txt
+# OR
+bin/print.rb examples/input3.txt
+```
 
 Example of output:
 
