@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t receipt-printer-rspec -f Dockerfile.rspec .
+docker run --rm receipt-printer-rspec

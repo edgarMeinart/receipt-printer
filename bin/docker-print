@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z "$1" ] || [ ! -f "$1" ]; then
+  echo "Use: bin/docker-print <path to example>"
+  exit 1
+fi
+
+docker build -t receipt-printer .
+
+docker run --rm -v "$(pwd)/$1:/app/input.txt" receipt-printer input.txt
